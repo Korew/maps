@@ -1,0 +1,35 @@
+// Common styles of the project
+* {
+	box-sizing: border-box;
+
+	&::before, &::after {
+		box-sizing: inherit;
+	}
+}
+
+html, body {
+    height: 100%;
+}
+
+.page {
+    
+}
+
+.page__wrapper {
+    min-height: 100%;
+    margin-bottom: -50px;
+}
+
+* html .page__wrapper {
+    height: 100%;
+}
+
+.page__buffer {
+    height: 50px;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
